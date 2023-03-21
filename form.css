@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+body
+{
+    font-size: 14px;
+    background-image:url('img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    background:whitesmoke;
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto 0;
+    border: 8px solid blue;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.9);
+}
+
+.container h2
+{
+    font-size: 31px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 24px;
+    padding: 24px;
+    text-align: center;
+    color: #08840e;
+}
+
+.input-name
+{
+    width: 90%;
+    position: relative;
+    margin: 24px auto;
+    
+}
+
+.question 
+{
+ font-size: 26px;
+ font-family: 'Times New Roman', Times, serif;
+ padding: 18px 5px;
+
+}
+.rate
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+input,button,select,textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.inputRadio,
+.checkbox
+{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+
+}
+
+.inputRadio:hover{
+    color: aquamarine;
+    background-color:black;
+}
+.textarea{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    outline: none;
+    border-color:black;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.btn{
+    background-color: rgb(217, 202, 231);
+    padding: 17px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn:hover{
+    color: rgb(68, 0, 255);
+    background-color:black;
+}
+
+/* NEW CSS */
+
+.qsn1, .qsn2, .qsn3, .qsn4, .qsn5, .qsn6, .qsn7, .qsn8, .qsn9, .qsn10, .thnq{
+    border: 2px solid rgb(40, 9, 240);
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    display: none;
+}
+.info{
+    border: 2px solid rgb(40, 9, 240);
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    display: block;
+}
+.strt{
+    padding: 10px 13px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    text-align: center;
+}
+.submit{
+    background-color: #4ec652;
+    color: white;
+  }
+.submit:hover {
+    background-color: #08840e;
+  }
+.reset{
+    background-color: #c22f2f;
+    color: white;
+  }
+.reset:hover {
+    background-color: #b70e0e;
+  }
+  input[type=text],[type=email],select{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .bk1, .bk2, .bk3,.bk4, .bk5, .bk6, .bk7,.bk8, .bk9{
+    padding: 10px 13px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #c22f2f;
+    color: white;
+}
+.opt1, .opt2, .opt3, .opt4, .opt5, .opt6, .opt7, .opt8, .opt9{
+    padding: 10px 13px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #4ec652;
+    color: white;
+}

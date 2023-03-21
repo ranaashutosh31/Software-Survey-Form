@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team7 Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!-- Heading -->
+    <div class="container">
+        <h2> Software Evaluation <br>Survey Form</h2>
+<!-- surveyee information -->
+            <div class="info">
+                <form action="" id="formj">
+                    <p style="color:red;" >All fields are mandatory to fill except last name.</p>
+                    <h4>
+                        First name:
+                    </h4>
+                    <input type="text" id="fname" name="fname" placeholder="Your name..">
+                    <h4>
+                        Last name:
+                    </h4>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    <h4>
+                        E-mail:
+                    </h4>
+                    <input type="email" id="email" name="email" placeholder="Your E-mail..">
+                    <h4>
+                        Software name:
+                    </h4>
+                    <input type="text" id="sname" name="sname" placeholder="Name of software for which survey form is to be filled..">
+                    <br>
+                    <input class="strt btn submit" type="submit" name="start" value="Start Survey" >  
+                </form>
+            </div>
+        <div class="form-container">
+            <form action="" id="formj" onsubmit="return validateForm()">
+<!-- Question 1 -->
+                <div class="input-name qsn1">
+                    <p id="quest" class="question">1.How likely is it that you would recommend this software to a friend or family member?</p>
+                    <select name="" id="" class="rate">
+                    <option value disabled selected >Rate from 0 to 10</option>
+                    <option value="zero">0</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="seven">7</option>
+                    <option value="eight">8</option>
+                    <option value="nine">9</option>
+                    <option value="ten">10</option>
+                    </select>
+                    <br><input class="bk1" type="button" name="back" value="Back">
+            <input class="opt1" type="button" name="next" value="Next">
+                </div>
+<!-- Question 2 -->
+                <div class="input-name qsn2">
+                    <p id="quest" class="question">2.How satisfied are you with the reliability of this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_2" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_2" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_2" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_2" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_2" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk2" type="button" name="back" value="Back">
+            <input class="opt2" type="button" name="next" value="Next">
+                </div>
+<!-- Question 3 -->
+                <div class="input-name qsn3">
+                    <p id="quest" class="question">3.How satisfied are you with the security of this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_3" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_3" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_3" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_3" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_3" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk3" type="button" name="back" value="Back">
+            <input class="opt3" type="button" name="next" value="Next">
+                </div>
+<!-- Question 4 -->
+                <div class="input-name qsn4">
+                    <p id="quest" class="question">4.How satisfied are you with the abbility to integrate other software with this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_4" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_4" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_4" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_4" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_4" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk4" type="button" name="back" value="Back">
+            <input class="opt4" type="button" name="next" value="Next">
+                </div>
+<!-- Question 5 -->
+                <div class="input-name qsn5">
+                    <p id="quest" class="question">5.How satisfied are you with this software's ease of use?</p>
+                    <label for="">
+                        <input type="radio" name="source_5" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_5" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_5" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_5" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_5" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk5" type="button" name="back" value="Back">
+            <input class="opt5" type="button" name="next" value="Next">
+                </div>
+<!-- Question 6 -->
+                <div class="input-name qsn6">
+                    <p id="quest" class="question">6.How satisfied are you with the look and feel of this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_6" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_6" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_6" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_6" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_6" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk6" type="button" name="back" value="Back">
+            <input class="opt6" type="button" name="next" value="Next">
+                </div>
+<!-- Question 7 -->
+                <div class="input-name  qsn7">
+                    <p id="quest" class="question">7.How satisfied are you with the account setup experience of this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_7" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_7" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_7" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_7" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_7" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk7" type="button" name="back" value="Back">
+            <input class="opt7" type="button" name="next" value="Next">
+                </div>
+<!-- Question 8 -->
+                <div class="input-name  qsn8">
+                    <p id="quest" class="question">8.How satisfied are you with the value for the money of this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_8" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_8" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_8" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_8" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_8" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk8" type="button" name="back" value="Back">
+            <input class="opt8" type="button" name="next" value="Next">
+                </div>
+<!-- Question 9 -->
+                <div class="input-name qsn9">
+                    <p id="quest" class="question">9.How satisfied are you with the ability to collaborate with other users on this software?</p>
+                    <label for="">
+                        <input type="radio" name="source_9" value="Extremely satisfied"
+                        class="inputRadio"> Extremely satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_9" value="very satisfied"
+                        class="inputRadio"> Very satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_9" value="Somewhat satisfied"
+                        class="inputRadio">Somewhat satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_9" value="Not so satisfied"
+                        class="inputRadio">Not so satisfied
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source_9" value="Not at all satisfied"
+                        class="inputRadio"> Not at all satisfied
+                    </label>
+                    <br><input class="bk9" type="button" name="back" value="Back">
+            <input class="opt9" type="button" name="next" value="Next">
+                </div>
+<!-- end of radio button -->
+<!-- Textarea section -->
+<!-- Question 10 -->
+            <div class="input-name qsn10">
+                <p id="quest" class="question">10.Do you have any thoughts on how to improve this software?</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+                <input class="btn submit submt" type="submit" id="submit"  value="Submit">
+                <input type="reset" id="reset" class="btn reset" value="Reset" onclick="clicks(event)">
+            </div>
+        </div>
+            </form>
+        </div>
+        
+    </div>
+<!-- javascript -->
+    <script src="js.js"></script>
+</body>
+</html>
